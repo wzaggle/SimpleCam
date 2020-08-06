@@ -1,0 +1,213 @@
+﻿<Window x:Name="VISCA_Presets" x:Class="MainWindow"
+     
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleCam"
+        mc:Ignorable="d"
+        Title="Camera Control and Presets" Height="570" Width="450" MinWidth="450" MaxWidth="450" MinHeight="570" MaxHeight="570" Background="#FF032127" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}">
+
+    <Window.Resources>
+
+
+    </Window.Resources>
+
+    <Grid x:Name="Presets1" AutomationProperties.IsOffscreenBehavior="Onscreen" MinWidth="440" MinHeight="400" HorizontalAlignment="Left" Width="440" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8" />
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="91"/>
+            <ColumnDefinition Width="9"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="leftControl" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2"  Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition  Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Name="C1HM" Uid="2"  Width="35" Height="35"  Grid.Row="2" Grid.Column="2" Background="#FF707070" >
+                <Image Source="controlhm.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Button Name="C1UL" Uid="8"  Width="35" Height="35"  Grid.Row="1" Grid.Column="1" >
+                <Image Source="arrow8.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Button Name="C1LT" Uid="7"  Width="35" Height="35"  Grid.Row="2" Grid.Column="1" >
+                <Image Source="arrow7.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Button Name="C1DL" Uid="6"  Width="35" Height="35"  Grid.Row="3" Grid.Column="1" >
+                <Image Source="arrow6.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Button Name="C1DN" Uid="5"  Width="35" Height="35"  Grid.Row="3" Grid.Column="2" >
+                <Image Source="arrow5.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Button Name="C1DR" Uid="4"  Width="35" Height="35"  Grid.Row="3" Grid.Column="3" >
+                <Image Source="arrow4.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Button Name="C1RT" Uid="3"  Width="35" Height="35"  Grid.Row="2" Grid.Column="3" >
+                <Image Source="arrow3.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Button Name="C1UR" Uid="2"  Width="35" Height="35"  Grid.Row="1" Grid.Column="3" >
+                <Image Source="arrow2.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Button Name="C1UP" Uid="1"  Width="35" Height="35"  Grid.Row="1" Grid.Column="2" >
+                <Image Source="arrow1.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35"  />
+            </Button>
+            <Slider Name="Zoom1" Orientation = "Vertical" Minimum="0" TickFrequency="1" IsSnapToTickEnabled="True" Maximum="40"  Grid.Column="5" Grid.Row="1" HorizontalAlignment="Left" Height="102" Margin="7,0,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="28" />
+            <Label Name="Z1x" Content="{Binding Value, ElementName=Zoom1, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="6" Grid.Row="2" FontSize="8" FontWeight="Bold" FontFamily="Tahoma"  Width="36" Height="28" Margin="5,7,-16,0" Foreground="#FFC8C8C8"/>
+            <Label Name="Z1" Content="Zoom" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="2" FontSize="9" FontWeight="Bold" FontFamily="Tahoma"  Width="36" Height="28" Margin="21,3,3,4" Foreground="#FFC8C8C8" Grid.ColumnSpan="2" >
+                <Label.LayoutTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90" />
+                        <ScaleTransform ScaleX="-1" ScaleY="-1"/>
+                    </TransformGroup>
+                </Label.LayoutTransform>
+            </Label>
+            <Image Source="controlPlus.png" HorizontalAlignment="center" Height="19" Grid.Column="5" Grid.Row="1" VerticalAlignment="center" Width="20" Margin="27,4,14,14" Grid.ColumnSpan="2" />
+            <Image Source="controlMinus.png" HorizontalAlignment="center" Height="17" Grid.Column="5" Grid.Row="3" VerticalAlignment="center" Width="20" Margin="27,16,10,4" Grid.ColumnSpan="2" />
+            <Slider Name="Speed1" Minimum="1" Maximum="18" TickPlacement="BottomRight" TickFrequency="1" IsSnapToTickEnabled="True" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="24" Margin="19,6,0,0" Grid.Row="4" VerticalAlignment="Top" Width="118"/>
+            <Label Content="Speed" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="4" Grid.Row="4" FontSize="9" FontWeight="Bold" FontFamily="Tahoma" Grid.ColumnSpan="2" Margin="7,2,0,54" Foreground="#FFC8C8C8" />
+            <Label Content="{Binding Value, ElementName=Speed1, UpdateSourceTrigger=PropertyChanged}" FontSize="9" Grid.Column="5" Grid.Row="4"  DockPanel.Dock="Right" HorizontalAlignment="Center" Width="25" Margin="10,16,0,40" FontFamily="Tahoma" FontWeight="Bold" Foreground="White"   />
+
+        </Grid>
+        <Grid x:Name="rightControl" Grid.Column="4" Grid.ColumnSpan="4" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition  Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Name="C2HM" Uid="2"  Width="35" Height="35"  Grid.Row="2" Grid.Column="2" Background="#FF707070" >
+                <Image Source="controlhm.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Button Name="C2UL" Uid="8"  Width="35" Height="35"  Grid.Row="1" Grid.Column="1" >
+                <Image Source="arrow8.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Button Name="C2LT" Uid="7"  Width="35" Height="35"  Grid.Row="2" Grid.Column="1" >
+                <Image Source="arrow7.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Button Name="C2DL" Uid="6"  Width="35" Height="35"  Grid.Row="3" Grid.Column="1" >
+                <Image Source="arrow6.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Button Name="C2DN" Uid="5"  Width="35" Height="35"  Grid.Row="3" Grid.Column="2" >
+                <Image Source="arrow5.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Button Name="C2DR" Uid="4"  Width="35" Height="35"  Grid.Row="3" Grid.Column="3" >
+                <Image Source="arrow4.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Button Name="C2RT" Uid="3"  Width="35" Height="35"  Grid.Row="2" Grid.Column="3" >
+                <Image Source="arrow3.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Button Name="C2UR" Uid="2"  Width="35" Height="35"  Grid.Row="1" Grid.Column="3" >
+                <Image Source="arrow2.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Button Name="C2UP" Uid="1"  Width="35" Height="35"  Grid.Row="1" Grid.Column="2" >
+                <Image Source="arrow1.png" HorizontalAlignment="center" Height="35" VerticalAlignment="center" Width="35" />
+            </Button>
+            <Slider Name="Zoom2" Orientation = "Vertical" TickFrequency="1" IsSnapToTickEnabled="True" Minimum="0" Maximum="40" Grid.Column="5" Grid.Row="1" HorizontalAlignment="Left" Height="102" Margin="7,0,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="28" Foreground="#FFFD0000" />
+            <Label Name="Z2x" Content="{Binding Value, ElementName=Zoom2, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="6" Grid.Row="2" FontSize="8" FontWeight="Bold" FontFamily="Tahoma"  Width="36" Height="28" Margin="5,7,-16,0" Foreground="#FFC8C8C8"/>
+            <Label Name="Z2" Content="Zoom" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="2" FontSize="9" FontWeight="Bold" FontFamily="Tahoma"  Width="36" Height="28" Margin="21,3,3,4" Foreground="#FFC8C8C8" Grid.ColumnSpan="2" >
+                <Label.LayoutTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90" />
+                        <ScaleTransform ScaleX="-1" ScaleY="-1"/>
+                    </TransformGroup>
+                </Label.LayoutTransform>
+            </Label>
+            <Image Source="controlPlus.png" HorizontalAlignment="center" Height="19" Grid.Column="5" Grid.Row="1" VerticalAlignment="center" Width="20" Margin="27,4,14,14" Grid.ColumnSpan="2" />
+            <Image Source="controlMinus.png" HorizontalAlignment="center" Height="17" Grid.Column="5" Grid.Row="3" VerticalAlignment="center" Width="20" Margin="27,16,10,4" Grid.ColumnSpan="2" />
+            <Slider Name="Speed2" Minimum="1" Maximum="18" TickPlacement="BottomRight" TickFrequency="1" IsSnapToTickEnabled="True" Grid.ColumnSpan="5" HorizontalAlignment="Left" Margin="19,6,0,7" Grid.Row="4" Width="117" Grid.RowSpan="2"/>
+            <Label Content="Speed" VerticalAlignment="Center" Grid.Column="4" Grid.Row="4" FontSize="9" FontWeight="Bold" FontFamily="Tahoma" Grid.ColumnSpan="2" Height="27" Margin="6,3,0,7" Grid.RowSpan="2" Foreground="#FFC8C8C8"   />
+            <Label Content="{Binding Value, ElementName=Speed2, UpdateSourceTrigger=PropertyChanged}" FontSize="9" Grid.Column="5" Grid.Row="4"  DockPanel.Dock="Right" HorizontalAlignment="Center" Width="24" Margin="10,16,1,0" FontFamily="Tahoma" FontWeight="Bold" Grid.RowSpan="2" RenderTransformOrigin="-0.304,0.64" Foreground="White"   />
+        </Grid>
+
+        <Label Name="Camera1_Heading" Content="   Camera One" HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="200" FontFamily="Arial Black" FontSize="24" FontWeight="Bold"  Grid.Row="1" Grid.ColumnSpan="3" Margin="-2,0,10,0" Foreground="#FF46C828"/>
+        <Label Name="Camera2_Heading" Content="   Camera Two" HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="200" FontFamily="Arial Black" FontSize="24" FontWeight="Bold" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="4" Margin="16,0,4,0" Foreground="#FF46C828"/>
+        <Button Name="Button1A" Content="Button1" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="1" FontSize="14" FontWeight="Bold" Grid.Column="1" Grid.Row="3" Background="#FFAAAAAA"/>
+        <Button Name="Button2A" Content="Button2" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="2" FontSize="14" FontWeight="Bold" Grid.Column="1" Grid.Row="4" Background="#FFAAAAAA"/>
+        <Button Name="Button3A" Content="Button3" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="3" FontSize="14" FontWeight="Bold" Grid.Column="1" Grid.Row="5" Background="#FFAAAAAA"/>
+        <Button Name="Button4A" Content="Button4" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="4" FontSize="14" FontWeight="Bold" Grid.Column="1" Grid.Row="6" Background="#FFAAAAAA"/>
+        <Button Name="Button5A" Content="Button5" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="5" FontSize="14" FontWeight="Bold" Grid.Column="1" Grid.Row="7" Background="#FFAAAAAA" />
+        <Button Name="Button6A" Content="Button6" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="6" FontSize="14" FontWeight="Bold" Grid.Column="2" Grid.Row="3" Background="#FFAAAAAA"/>
+        <Button Name="Button7A" Content="Button7" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="7" FontSize="14" FontWeight="Bold" Grid.Column="2" Grid.Row="4" Background="#FFAAAAAA"/>
+        <Button Name="Button8A" Content="Button8" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="8" FontSize="14" FontWeight="Bold" Grid.Column="2" Grid.Row="5" Background="#FFAAAAAA"/>
+        <Button Name="Button9A" Content="Button9" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="9" FontSize="14" FontWeight="Bold" Grid.Column="2" Grid.Row="6" Background="#FFAAAAAA"/>
+        <Button Name="Button10A" Content="Button10" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="40" Uid="10" FontSize="14" FontWeight="Bold" Grid.Column="2" Grid.Row="7" Background="#FFAAAAAA"/>
+        <Button Name="Button1B" Content="Button1" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="11" FontSize="14" FontWeight="Bold" Grid.Column="4" Grid.Row="3" Background="#FFAAAAAA" Grid.ColumnSpan="2"/>
+        <Button Name="Button2B" Content="Button2" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="14" FontSize="14" FontWeight="Bold" Grid.Column="4" Grid.Row="4"  Background="#FFAAAAAA" Grid.ColumnSpan="2"/>
+        <Button Name="Button3B" Content="Button3" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="13" FontSize="14" FontWeight="Bold" Grid.Column="4" Grid.Row="5"  Background="#FFAAAAAA" Grid.ColumnSpan="2"/>
+        <Button Name="Button4B" Content="Button4" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="14" FontSize="14" FontWeight="Bold" Grid.Column="4" Grid.Row="6"  Background="#FFAAAAAA" Grid.ColumnSpan="2"/>
+        <Button Name="Button5B" Content="Button5" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="15" FontSize="14" FontWeight="Bold" Grid.Column="4" Grid.Row="7"  Background="#FFAAAAAA" Grid.ColumnSpan="2"/>
+        <Button Name="Button6B" Content="Button6" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="16" FontSize="14" FontWeight="Bold" Grid.Column="6" Grid.Row="3" Background="#FFAAAAAA"/>
+        <Button Name="Button7B" Content="Button7" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="17" FontSize="14" FontWeight="Bold" Grid.Column="6" Grid.Row="4" Background="#FFAAAAAA"/>
+        <Button Name="Button8B" Content="Button8" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="18"  FontSize="14" FontWeight="Bold" Grid.Column="6" Grid.Row="5" Background="#FFAAAAAA"/>
+        <Button Name="Button9B" Content="Button9" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="19" FontSize="14" FontWeight="Bold" Grid.Column="6" Grid.Row="6" Background="#FFAAAAAA"/>
+        <Button Name="Button10B" Content="Button10" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="100" Height="40" Uid="20" FontSize="14" FontWeight="Bold" Grid.Column="6" Grid.Row="7" Background="#FFAAAAAA"/>
+
+        <Button Name="Rename_Button" Content="Rename Preset" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="40" ClickMode="Press" FontSize="16" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="9" Background="#FF7E7E7E" Foreground="Yellow"/>
+        <Button Name="Save_Button" Content=" Set Preset" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Width="200" Height="40" ClickMode="Press" FontSize="16" FontWeight="Bold" Grid.Column="4" Grid.ColumnSpan="3" Grid.Row="9" Background="#FF7E7E7E" Foreground="Yellow" />
+
+        <ToggleButton Name="AutoFocus2" Content="Manual Focus" HorizontalAlignment="left" Height="20"  VerticalAlignment="Center" Width="100" Grid.Column="4"  Grid.Row="11" Background="#FF006199" Margin="0,2" Uid="2" Grid.ColumnSpan="2"/>
+        <ToggleButton Name="AutoFocus1" Content="Manual Focus" HorizontalAlignment="left" Height="20"  VerticalAlignment="Center" Width="100" Grid.Column="1"  Grid.Row="11" Background="#FF006199" Margin="0,2"/>
+        <ToggleButton Name="Backlight2" Content="BackLight" HorizontalAlignment="left" Height="20"  VerticalAlignment="Center" Width="100" Grid.Column="4"  Grid.Row="13" Background="#FF006199" Margin="0,1,0,2" Grid.ColumnSpan="2"/>
+        <ToggleButton Name="Backlight1" Content="BackLight" HorizontalAlignment="left" Height="20"  VerticalAlignment="Center" Width="100" Grid.Column="1"  Grid.Row="13" Background="#FF006199" Margin="0,1,0,2"/>
+        <ToggleButton Name="Compensate2" Content="Exp Comp" HorizontalAlignment="left" Height="20"  VerticalAlignment="Center" Width="100" Grid.Column="4"  Grid.Row="15" Background="#FF006199" Margin="0,1,0,2" Grid.ColumnSpan="2"/>
+        <ToggleButton Name="Compensate1" Content="Exp Comp" HorizontalAlignment="left" Height="20"  VerticalAlignment="Center" Width="100" Grid.Column="1"  Grid.Row="15" Background="#FF006199" Margin="0,1,0,2"/>
+        <Button Name="CIP1" Content="Camera1 IP" HorizontalAlignment="right" VerticalAlignment="Center" Width="98" Height="20" Grid.Column="2"  Grid.Row="15"  Background="#FF3D96C9" Margin="0,1,0,2"/>
+        <Button Name="Focus2P" Content="Focus +" HorizontalAlignment="Left"  VerticalAlignment="Center" Width="49" Height="20"  Grid.Column="6"  Grid.Row="11"   Background="#FF3C96C9" Margin="2,2,0,2" Uid="2"/>
+        <Button Name="Focus2M" Content="Focus -" HorizontalAlignment="Right"  VerticalAlignment="Center" Width="48" Height="20"  Grid.Column="6"  Grid.Row="11"   Background="#FF3C96C9" Margin="0,2" Uid="2"/>
+        <Button Name="Focus1P" Content="Focus +" HorizontalAlignment="Left"  VerticalAlignment="Center" Width="49" Height="20"  Grid.Column="2"  Grid.Row="11"   Background="#FF3C96C9" Margin="2,2,0,2" Uid="1"/>
+        <Button Name="Focus1M" Content="Focus -" HorizontalAlignment="Right"  VerticalAlignment="Center" Width="48" Height="20"  Grid.Column="2"  Grid.Row="11"   Background="#FF3C96C9" Margin="0,2" Uid="1"/>
+        <Button Name="CIP2" Content="Camera2 IP" HorizontalAlignment="right"  VerticalAlignment="Center" Width="98" Height="20"  Grid.Column="6"  Grid.Row="15"  Background="#FF3C96C9" Margin="0,1,0,2"/>
+        <Button Name="C1WB" Content="White Bal" HorizontalAlignment="right"  VerticalAlignment="Center" Width="98" Height="20"  Grid.Column="6"  Grid.Row="13"  Background="#FF3C96C9" Margin="0,1,0,2"/>
+        <Button Name="C2WB" Content="White Bal" HorizontalAlignment="right"  VerticalAlignment="Center" Width="98" Height="20"  Grid.Column="2"  Grid.Row="13"  Background="#FF3C96C9" Margin="0,1,0,2"/>
+        <Line  Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="7"  Stroke="Black" StrokeThickness="2" X1="0" X2="380" Margin="20,0,0,0"></Line>
+        <Label Grid.ColumnSpan="3" Content="Simple Camera Control Ver 1.01 by Zaggle" Grid.Column="2" HorizontalAlignment="Center" Height="25" Margin="11,-3,0,28" VerticalAlignment="Center" Width="200" FontFamily="Sitka Small" FontSize="9" Foreground="#FFA8A8A8" Grid.RowSpan="2"/>
+
+    </Grid>
+
+</Window>
