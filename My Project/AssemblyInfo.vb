@@ -11,11 +11,11 @@ Imports System.Windows
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("WpfApp2")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("WpfApp2")>
-<Assembly: AssemblyCopyright("Copyright ©  2020")>
+<Assembly: AssemblyTitle("SimpleCam PTZ Control")>
+<Assembly: AssemblyDescription("Visca PTZ Camera Control w/OBS")>
+<Assembly: AssemblyCompany("SimpleCam")>
+<Assembly: AssemblyProduct("SimpleCam")>
+<Assembly: AssemblyCopyright("Copyright ©  2020 by Zaggle")>
 <Assembly: AssemblyTrademark("")>
 <Assembly: ComVisible(false)>
 
@@ -55,5 +55,5 @@ Imports System.Windows
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.0.7.0")>
+<Assembly: AssemblyFileVersion("1.0.7.0")>

@@ -1,7 +1,213 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" UseMySettingsClassName="true">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="Disabled" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;false&lt;/string&gt;
+  &lt;string&gt;false&lt;/string&gt;
+  &lt;string&gt;false&lt;/string&gt;
+  &lt;string&gt;false&lt;/string&gt;
+  &lt;string&gt;false&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="CamIP" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;X&lt;/string&gt;
+  &lt;string&gt;X&lt;/string&gt;
+  &lt;string&gt;X&lt;/string&gt;
+  &lt;string&gt;X&lt;/string&gt;
+  &lt;string&gt;X&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="CamPort" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;1259&lt;/string&gt;
+  &lt;string&gt;1259&lt;/string&gt;
+  &lt;string&gt;1259&lt;/string&gt;
+  &lt;string&gt;1259&lt;/string&gt;
+  &lt;string&gt;1259&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="CamSpeed" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;5&lt;/string&gt;
+  &lt;string&gt;5&lt;/string&gt;
+  &lt;string&gt;5&lt;/string&gt;
+  &lt;string&gt;5&lt;/string&gt;
+  &lt;string&gt;5&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Titles" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Camera1&lt;/string&gt;
+  &lt;string&gt;Camera2&lt;/string&gt;
+  &lt;string&gt;Camera3&lt;/string&gt;
+  &lt;string&gt;Camera4&lt;/string&gt;
+  &lt;string&gt;Camera5&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Backlighting" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;false&lt;/string&gt;
+  &lt;string&gt;false&lt;/string&gt;
+  &lt;string&gt;false&lt;/string&gt;
+  &lt;string&gt;false&lt;/string&gt;
+  &lt;string&gt;false&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Compensation" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;false&lt;/string&gt;
+  &lt;string&gt;false&lt;/string&gt;
+  &lt;string&gt;false&lt;/string&gt;
+  &lt;string&gt;false&lt;/string&gt;
+  &lt;string&gt;false&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Cam1Buttons" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Preset1&lt;/string&gt;
+  &lt;string&gt;Preset2&lt;/string&gt;
+  &lt;string&gt;Preset3&lt;/string&gt;
+  &lt;string&gt;Preset4&lt;/string&gt;
+  &lt;string&gt;Preset5&lt;/string&gt;
+  &lt;string&gt;Preset6&lt;/string&gt;
+  &lt;string&gt;Preset7&lt;/string&gt;
+  &lt;string&gt;Preset8&lt;/string&gt;
+  &lt;string&gt;Preset9&lt;/string&gt;
+  &lt;string&gt;Preset10&lt;/string&gt;
+  &lt;string&gt;Preset11&lt;/string&gt;
+  &lt;string&gt;Preset12&lt;/string&gt;
+  &lt;string&gt;Preset13&lt;/string&gt;
+  &lt;string&gt;Preset14&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Cam2Buttons" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Preset1&lt;/string&gt;
+  &lt;string&gt;Preset2&lt;/string&gt;
+  &lt;string&gt;Preset3&lt;/string&gt;
+  &lt;string&gt;Preset4&lt;/string&gt;
+  &lt;string&gt;Preset5&lt;/string&gt;
+  &lt;string&gt;Preset6&lt;/string&gt;
+  &lt;string&gt;Preset7&lt;/string&gt;
+  &lt;string&gt;Preset8&lt;/string&gt;
+  &lt;string&gt;Preset9&lt;/string&gt;
+  &lt;string&gt;Preset10&lt;/string&gt;
+  &lt;string&gt;Preset11&lt;/string&gt;
+  &lt;string&gt;Preset12&lt;/string&gt;
+  &lt;string&gt;Preset13&lt;/string&gt;
+  &lt;string&gt;Preset14&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Cam3Buttons" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Preset1&lt;/string&gt;
+  &lt;string&gt;Preset2&lt;/string&gt;
+  &lt;string&gt;Preset3&lt;/string&gt;
+  &lt;string&gt;Preset4&lt;/string&gt;
+  &lt;string&gt;Preset5&lt;/string&gt;
+  &lt;string&gt;Preset6&lt;/string&gt;
+  &lt;string&gt;Preset7&lt;/string&gt;
+  &lt;string&gt;Preset8&lt;/string&gt;
+  &lt;string&gt;Preset9&lt;/string&gt;
+  &lt;string&gt;Preset10&lt;/string&gt;
+  &lt;string&gt;Preset11&lt;/string&gt;
+  &lt;string&gt;Preset12&lt;/string&gt;
+  &lt;string&gt;Preset13&lt;/string&gt;
+  &lt;string&gt;Preset14&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Cam4Buttons" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Preset1&lt;/string&gt;
+  &lt;string&gt;Preset2&lt;/string&gt;
+  &lt;string&gt;Preset3&lt;/string&gt;
+  &lt;string&gt;Preset4&lt;/string&gt;
+  &lt;string&gt;Preset5&lt;/string&gt;
+  &lt;string&gt;Preset6&lt;/string&gt;
+  &lt;string&gt;Preset7&lt;/string&gt;
+  &lt;string&gt;Preset8&lt;/string&gt;
+  &lt;string&gt;Preset9&lt;/string&gt;
+  &lt;string&gt;Preset10&lt;/string&gt;
+  &lt;string&gt;Preset11&lt;/string&gt;
+  &lt;string&gt;Preset12&lt;/string&gt;
+  &lt;string&gt;Preset13&lt;/string&gt;
+  &lt;string&gt;Preset14&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Cam5Buttons" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Preset1&lt;/string&gt;
+  &lt;string&gt;Preset2&lt;/string&gt;
+  &lt;string&gt;Preset3&lt;/string&gt;
+  &lt;string&gt;Preset4&lt;/string&gt;
+  &lt;string&gt;Preset5&lt;/string&gt;
+  &lt;string&gt;Preset6&lt;/string&gt;
+  &lt;string&gt;Preset7&lt;/string&gt;
+  &lt;string&gt;Preset8&lt;/string&gt;
+  &lt;string&gt;Preset9&lt;/string&gt;
+  &lt;string&gt;Preset10&lt;/string&gt;
+  &lt;string&gt;Preset11&lt;/string&gt;
+  &lt;string&gt;Preset12&lt;/string&gt;
+  &lt;string&gt;Preset13&lt;/string&gt;
+  &lt;string&gt;Preset14&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Cam1" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Cam2" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="ShowMore" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="StaySingle" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CamCom" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="SerialIP" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="CamAdd" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
